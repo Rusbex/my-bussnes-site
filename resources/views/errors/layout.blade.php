@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/form.css')}}">
-    <title>404</title>
+    <title>@yield('title')</title>
 </head>
 <style>
     h1{
@@ -32,16 +32,16 @@
 <body style="background-image: url('img/back-fot.png');">
 <!-- Preloader -->
 <section class="contact-section section-padding">
-<div class="section-title-one container" style="justify-content: center;
+    <div class="section-title-one container" style="justify-content: center;
     display: grid; text-align: center">
-    <h1>404</h1>
-    <h2>Опс походу... что-то пошло не так</h2>
-    <p>Прошу сообщить об ошибке или вернутся на главную страницу</p>
-    <a href="{{route('home')}}"><button class="theme_button" style="border-radius: 10px;">На главную</button></a>
-    <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, у меня возникла ошибка 404 (напишите в результате каких действий появилась ошибка)" target="_blank" >
-        <button class="theme_button" style="border-radius: 10px;">Сообщить об ошибке</button></a>
+        <h1>@yield('message')</h1>
+        <h2>Опс походу... что-то пошло не так</h2>
+        <p>Прошу сообщить об ошибке или вернутся на главную страницу</p>
+        <a href="{{route('home')}}"><button class="theme_button" style="border-radius: 10px;">На главную</button></a>
+        <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, у меня возникла ошибка 404 (напишите в результате каких действий появилась ошибка)" target="_blank" >
+            <button class="theme_button" style="border-radius: 10px;">Сообщить об ошибке</button></a>
 
-</div>
+    </div>
 </section>
 </body>
 </html>

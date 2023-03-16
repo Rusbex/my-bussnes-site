@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+    <!-- Тайтл -->
+    <title>Разработка сайтов и SEO продвижение|Казахстан-Шымкент</title>
     <!-- Мета теги -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Rustam T." content="bexon">
-    <!-- Тайтл -->
-    <title>Bexon</title>
+    <meta name="description" content="Разработка сайтов под ключ, SEO продвижение и Веб дизайн | Заказать создание сайта ☎ +7 778 620 5167 | Разработка и продвижение сайтов в Казахстане (Шымкент)">
+    <meta name="author" content="Rustam T. Bexon RusBex">
+    <link rel="canonical" href="https://main.bexon.kz/">
     <!-- Фавикон -->
     <link rel="shortcut icon" href="img/favicon.png">
     <!-- Стили -->
@@ -24,62 +26,44 @@
     <link rel="stylesheet" href="{{asset('css/accordion.css')}}">
     <link rel="stylesheet" href="{{asset('css/form.css')}}">
     <link rel="stylesheet" href="{{asset('css/slider.css')}}">
-    <link rel="stylesheet" href="{{asset('css/parallax.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- ПРИВЕТ, РАЗ ТЫ ТУТ ЗНАЧИТ ТЫ ШАРИШЬ -> использованый стек Bootstrap + jQury + Laravel-->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJMMS3YWE5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJMMS3YWE5');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92832764, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92832764" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
 
 <!-- preloader -->
-<div id="preloader" class="preloader">
-    <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-                    <span data-text-preloader="R" class="letters-loading">
-                        R
-                    </span>
-            <span data-text-preloader="U" class="letters-loading">
-                        U
-                    </span>
-            <span data-text-preloader="S" class="letters-loading">
-                        S
-                    </span>
-            <span data-text-preloader="T" class="letters-loading">
-                        T
-                    </span>
-            <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-            <span data-text-preloader="M" class="letters-loading">
-                        M
-                    </span>
-        </div>
-        <p class="text-center">Нажмите SPACE чтоб продолжить</p>
-    </div>
-    <div class="loader">
-        <div class="row">
-            <div class="col-3 loader-section section-left">
-                <div class="bg"></div>
-            </div>
-            <div class="col-3 loader-section section-left">
-                <div class="bg"></div>
-            </div>
-            <div class="col-3 loader-section section-right">
-                <div class="bg"></div>
-            </div>
-            <div class="col-3 loader-section section-right">
-                <div class="bg"></div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- END preloader -->
 
 <header class="header-section header-style-1">
     <div class="container">
@@ -96,10 +80,8 @@
                         <li><a href="{{route('home')}}#services">Услуги</a></li>
                         <li><a href="{{route('home')}}#price">Прайслист</a></li>
                         <li><a href="{{route('home')}}#portfolio">Портфолио</a></li>
-                        {{--                            <li><a href="{{route('home')}}#blog">Блог</a></li>--}}
                         <li id="contact-head"><a href="{{route('home')}}#contact">Контакты</a></li>
-                        <button type="button" class="btn btn-default btn-sm modal-link" data-modal-id="1">Связатся
-                        </button>
+                        <li><button type="button" class="btn btn-default btn-sm modal-link" data-modal-id="1">Связатся</button>
                         </li>
                     </ul>
                 </div>
@@ -121,16 +103,13 @@
                         <ul class="metismenu" id="mobile-menu">
                             <li><a href="{{route('home')}}#start">Начало</a>
                             <li><a href="{{route('home')}}#services">Услуги</a></li>
-                            <li><a href="{{route('home')}}#price">Прайслист</a></li>
+                            <li><a href="{{route('home')}}#price-mob">Прайслист</a></li>
                             <li><a href="{{route('home')}}#portfolio">Портфолио</a></li>
-                            {{--                            <li><a href="{{route('home')}}#blog">Блог</a></li>--}}
-                            <li id="contact-head"><a href="{{route('home')}}#contact">Контакты</a></li>
+                            <li><a href="{{route('home')}}#contact">Контакты</a></li>
                         </ul>
                         <div class="social-profile">
-                            <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт"
-                               target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
-                            <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i
-                                    class="fab fa-instagram big-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт" target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
+                            <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i class="fab fa-instagram big-icon"></i></a>
                             <a href="https://t.me/bexon123" target="_blank"><i class="fab fa-telegram big-icon"></i></a>
                             <a href="mailto:rustuy2018@gmail.com" target="_blank"><i class="fab fa-google big-icon"></i></a>
                         </div>
@@ -164,16 +143,14 @@
                     </div>
                     <p class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.6s">Добро пожаловать на
                         сайт!
-                        я заминаюсь веб разработкой и дизайном, готов помочь вам своими <a
-                            href="#price">услугами</a></p>
+                        я заминаюсь веб разработкой и дизайном, готов помочь вам такими <a
+                            href="#services">услугами</a></p>
                     <a href="javascript: void(0);" class="theme-btn wow fadeInLeft modal-link" data-modal-id="1"
                        data-wow-duration="1.5s" data-wow-delay="1.9s">Связатся сейчас</a>
 
                     <div class="social-profile">
-                        <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт"
-                           target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
-                        <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i
-                                class="fab fa-instagram big-icon"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт" target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
+                        <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i class="fab fa-instagram big-icon"></i></a>
                         <a href="https://t.me/bexon123" target="_blank"><i class="fab fa-telegram big-icon"></i></a>
                         <a href="mailto:rustuy2018@gmail.com" target="_blank"><i class="fab fa-google big-icon"></i></a>
                     </div>
@@ -182,10 +159,9 @@
             {{--                2 BLock--}}
             <div class="col-lg-6 offset-lg-1 col-sm-12 text-center overflow-hidden">
                 <div class="hero-profile-img wow fadeInUp" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeInUp;">
-                        <img class="parallax parallax__layer" src="img/103.png" data-speed="0.18">
+                    <img class="parallax parallax__layer" src="img/103.png" alt="web" data-speed="0.18">
                 </div>
             </div>
-
             {{--                2 block end--}}
         </div>
     </div>
@@ -206,34 +182,31 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                     <div class="icon">
-                        <img src="img/icons/creativity.png" alt="">
+                        <img src="img/icons/creativity.png" alt="креативный дизайн">
                     </div>
                     <h3>Креативный дизайн</h3>
                     <p>Разработаю современный дизайн любой страницы сайта, основываясь на последних трендах в
-                        веб-дизайне и пожеланиях заказчика. Также работаю с дороботкой или же плдным редизайном уже
-                        действуйщих сайтов</p>
+                        веб-дизайне и пожеланиях заказчика. Также работаю с дороботкой или же полным редизайном уже действуйщих сайтов</p>
                 </div>
             </div> <!-- /.single-service -->
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="icon">
-                        <img src="img/icons/seo.png" alt="">
+                        <img src="img/icons/seo.png" alt="SEO настроика">
                     </div>
                     <h3>SEO настроика </h3>
                     <p>В объём работ входит направление на ваш сайт уникальных посетителей. Продвижение состоит в
-                        улучшение качества и доверия к вашему сайту поисковых систем за счёт ежедневных посетителей
-                        на ваш сайт.</p>
+                        улучшение качества и доверия к вашему сайту поисковых систем за счёт ежедневных посетителей на ваш сайт.</p>
                 </div>
             </div> <!-- /.single-service -->
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                     <div class="icon">
-                        <img src="img/icons/code.png" alt="">
+                        <img src="img/icons/code.png" alt="Вер разработка">
                     </div>
                     <h3>Веб разработка</h3>
                     <p>Разрабатываю современные сайты.
-                        Работаю как с шаблонными вариантами, так и могу разработать сайт с индивидуальным дизайном
-                        под ваши требования. Заказанный сайт будет размещен на вашем домене и хостинге.</p>
+                        Работаю как с шаблонными вариантами, так и могу разработать сайт с индивидуальным дизайном под ваши требования. Заказанный сайт будет размещен на вашем домене и хостинге.</p>
                 </div>
             </div> <!-- /.single-service -->
         </div>
@@ -303,8 +276,7 @@
                                     <div class="single-resume-item">
                                         <h3>Электроный каталог</h3>
                                         <p>Предстовляет собои каталог в виде сайта, позволяет разместить туда весь
-                                            ассартимент товаров компании, а клиенту выбрать необходимый и заказать
-                                            обрантый звонок.
+                                            ассартимент товаров компании, а клиенту выбрать необходимый и заказать обрантый звонок.
                                         </p>
                                     </div>
                                 </div>
@@ -379,7 +351,7 @@
                         <div class="panel">
                             <ul>
                                 <li>Телеграм бот - <span class="tenge"> от 5000 тнг</span></li>
-                                <li>Конткстаня реклама - <span class="tenge">15 000 тнг</span></li>
+                                <li>Контекстная реклама - <span class="tenge">15 000 тнг</span></li>
                                 <li>Email рассылка - <span class="tenge">от 5000 тнг</span></li>
                             </ul>
                         </div>
@@ -405,54 +377,12 @@
                         </div>
                     </div>
                 </div>
-
-                {{--                <div class="design-skills mt-45">--}}
-                {{--                    <h3>Design Skills</h3>--}}
-                {{--                    <div class="row">--}}
-                {{--                        <div class="single-design-skill text-center col-sm-4 col-12">--}}
-                {{--                            <div class="circlechart" data-percentage="90"></div>--}}
-                {{--                            <p>Web Design</p>--}}
-                {{--                        </div>--}}
-                {{--                        <div class="single-design-skill text-center col-sm-4 col-12">--}}
-                {{--                            <div class="circlechart" data-percentage="80"></div>--}}
-                {{--                            <p>Print Design</p>--}}
-                {{--                        </div>--}}
-                {{--                        <div class="single-design-skill text-center col-sm-4 col-12">--}}
-                {{--                            <div class="circlechart" data-percentage="75"></div>--}}
-                {{--                            <p>App Design</p>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
             </div>
         </div>
     </div>
 </section>
-
-
-<!-- testimonial section -->
-{{--<style>--}}
-{{--    @media screen and (max-width: 60em) {--}}
-{{--        #price .pricing__item {--}}
-{{--            max-width: none;--}}
-{{--            width: 100%;--}}
-{{--            flex: none;--}}
-{{--        }--}}
-
-{{--        #price .pricing__item:nth-child(2) {--}}
-{{--            border: 1px solid #fff;--}}
-{{--        }--}}
-{{--    }--}}
-
-{{--    @media (max-width: 760px) {--}}
-{{--        #price .pricing__action {--}}
-{{--            font-size: 13px;--}}
-{{--        }--}}
-{{--    }--}}
-{{--</style>--}}
-
 <!-- прайс лист-->
-<section class="about-section section-padding theme-bg-gray" id="price"
-         style="background-image: url('img/back-fot.png');">
+<section class="about-section section-padding theme-bg-gray" id="price" style="background-image: url('img/back-fot.png');">
     <div class="col-12 text-center col-lg-10 offset-lg-1">
         <div class="section-title-one">
             <span>Прайс Лист</span>
@@ -460,7 +390,7 @@
         </div>
     </div>
     <br>
-    <div class="container" id="price">
+    <div class="container" id="price-mob">
         <div class="row">
 
             <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1s">
@@ -472,14 +402,12 @@
                         <li class="pricing__feature">Wordpress, самописный</li>
                         <li class="pricing__feature">Лэндинг, Сайт-визитка</li>
                         <li class="pricing__feature">Дизайн по шаблону</li>
-                        <li class="pricing__feature">Базавые SEO настройки</li>
+                        <li class="pricing__feature">Базовые SEO настройки</li>
                         <li class="pricing__feature"><a href="#price-litle">доп.</a> Домен хостинг покупаются
                             отдельно
                         </li>
                     </ul>
-                    <button class="pricing__action"><a
-                            href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Лендинг"
-                            target="_blank">Заказать</a></button>
+                    <a class="pricing__action" href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Лендинг" target="_blank">Заказать</a>
                 </div>
             </div>
 
@@ -490,31 +418,29 @@
                     <ul class="pricing__feature-list">
                         <li class="pricing__feature">Срок 5-10 дней</li>
                         <li class="pricing__feature">Wordpress, Joomla, Opencart, самописный</li>
-                        <li class="pricing__feature">Корпоротивный сайт, Многостраничник</li>
+                        <li class="pricing__feature">Корпоративный  сайт, Многостаночник</li>
                         <li class="pricing__feature">Уникальный дизайн</li>
-                        <li class="pricing__feature">Разшириные SEO настроики</li>
+                        <li class="pricing__feature">Расширенные  SEO настройки</li>
                         <li class="pricing__feature">+ 1 месяц бесплатной технической Поддержки после сдачи проекта
                         </li>
                         <li class="pricing__feature"><a href="#price-litle">доп.</a> Домен хостинг покупаются
                             отдельно
                         </li>
                     </ul>
-                    <button class="pricing__action"><a
-                            href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Бизнес сайт"
-                            target="_blank">Заказать</a></button>
+                    <a class="pricing__action" href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Бизнес сайт" target="_blank">Заказать</a>
                 </div>
             </div>
 
             <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="1.6s">
                 <div class="pricing__item">
-                    <h3 class="pricing__title h3-price">Интренет-магазин</h3>
+                    <h3 class="pricing__title h3-price">Интернет-магазин</h3>
                     <div class="pricing__price">от 150 000 <span class="pricing__currency">₸</span></div>
                     <ul class="pricing__feature-list">
                         <li class="pricing__feature">Срок 15-30 дней</li>
                         <li class="pricing__feature">Wordpress, Joomla, Opencart</li>
                         <li class="pricing__feature">Интернет магазин, Электронный каталог</li>
                         <li class="pricing__feature">Уникальный дизайн или по шаблону</li>
-                        <li class="pricing__feature">Разшириные SEO настроики</li>
+                        <li class="pricing__feature">Расширенные  SEO настройки</li>
                         <li class="pricing__feature">+ 1 месяц бесплатной технической поддержки после сдачи проекта
                         </li>
                         <li class="pricing__feature">+ Административная панель</li>
@@ -522,14 +448,12 @@
                             отдельно
                         </li>
                         <li class="pricing__feature"><a href="#price-litle">доп.</a> Загрузка товаров отдельно</li>
-                        <li class="pricing__feature"><a href="#price-litle">доп.</a> Интеграция стороних преложений
-                            (1C, bitrix,
+                        <li class="pricing__feature"><a href="#price-litle">доп.</a> Интеграция сторонних приложений
+                            (1C, bitrix, Api
                             итд) отдельно
                         </li>
                     </ul>
-                    <button class="pricing__action"><a
-                            href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Интрнет магазин"
-                            target="_blank">Заказать</a></button>
+                    <a class="pricing__action" href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать Интрнет магазин" target="_blank">Заказать</a>
                 </div>
             </div>
 
@@ -564,7 +488,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item website wordpress">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/2.jpg" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/02.jpg" alt="1">
+                        <img class="img-fluid" src="img/portfolio/02.jpg" alt="web разработка">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -572,7 +496,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item app">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/001.png" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/01.jpg" alt="2">
+                        <img class="img-fluid" src="img/portfolio/01.jpg" alt="Web дизайн">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -580,7 +504,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item app">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/004.png" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/04.jpg" alt="3">
+                        <img class="img-fluid" src="img/portfolio/04.jpg" alt="seo">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -588,7 +512,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item app">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/005.png" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/05.jpg" alt="4">
+                        <img class="img-fluid" src="img/portfolio/05.jpg" alt="создание сайтов">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -596,7 +520,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item app">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/6.jpg" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/06.jpg" alt="5">
+                        <img class="img-fluid" src="img/portfolio/06.jpg" alt="сайты на заказ">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -604,7 +528,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item branding website">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/007.png" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/07.jpg" alt="6">
+                        <img class="img-fluid" src="img/portfolio/07.jpg" alt="разработка сайтов">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -612,7 +536,7 @@
             <div class="col-lg-4 col-md-6 col-12 grid-item branding website">
                 <div class="single-portfolio-item">
                     <a href="img/portfolio/008.jpg" class="popup-gallery">
-                        <img class="img-fluid" src="img/portfolio/08.jpg" alt="6">
+                        <img class="img-fluid" src="img/portfolio/08.jpg" alt="веб дизайн">
                         <span class="zoom-icon">+</span>
                     </a>
                 </div>
@@ -628,8 +552,8 @@
 
         <div class="modal-table-cell">
 
-            <form class="modal" id="callback-form" method="POST" enctype="multipart/form-data" autocomplete="off"
-                  class="validateform" action="{{route("contact_form_process")}}">
+            <form class="modal validateform" id="callback-form" method="POST" enctype="multipart/form-data" autocomplete="off"
+                  action="{{route("contact_form_process")}}">
                 @csrf
 
                 <div class="modal__close"></div>
@@ -637,29 +561,28 @@
                 <div class="modal__content">
 
                     <p class="contact-form-name item">
-                        <label for="name">Имя
+                        <label>Имя
                             <span class="required">*</span>
                         </label>
-                        <input type="text" value="" name="name" id="name" class="form-control"
-                               placeholder="Matsur...">
+                        <input type="text" name="name" class="form-control"
+                               placeholder="Как к вам обращаться?">
                     </p>
                     <p class="contact-form-email item">
-                        <label for="phone">Телефон
+                        <label>Телефон
                             <span class="required">*</span>
                         </label>
-                        <input type="phone" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                        <input type="text" name="phone"  placeholder="+7 (___) ___-__-__">
                     </p>
                     <p class="contact-form-email item">
-                        <label for="email">Email
+                        <label>Email
                         </label>
-                        <input type="email" value="" name="email" id="email" placeholder="rustuy2018@gmail.com"
-                               class="form-control">
+                        <input type="email" name="email"  placeholder="Ваш email" class="form-control">
                     </p>
                     <p class="contact-form-email item">
                         <label for="text">Сообщение
                             <span class="required">*</span>
                         </label>
-                        <input type="text" value="" name="text" id="text" class="form-control"
+                        <input type="text" name="text" class="form-control"
                                placeholder="Хочу заказать лендинг...">
                     </p>
                     <p class="contact-form-submit text-center topmargin_30">
@@ -682,51 +605,6 @@
 
 </div>
 <!-- END FORM-->
-
-<!-- blog section -->
-{{--<section class="blog-section section-padding" id="blog">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-12 text-center col-lg-8 offset-lg-2">--}}
-{{--                <div class="section-title-one">--}}
-{{--                    <span>Информация</span>--}}
-{{--                    <h2>Шаблоны для выбора и Этапы работы</h2>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-12">--}}
-{{--                <div class="single-blog blog-one">--}}
-{{--                    <a href="{{route('about')}}"><div class="featured-img" style="background-image: url('img/blog1.jpg');"></div></a>--}}
-{{--                    <div class="blog-content-box">--}}
-{{--                        <h3><a href="{{route('about')}}">Шаблоны для сайта</a></h3>--}}
-{{--                        <a href="{{route('about')}}" class="read-more-btn">+ Подробнее</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div> <!-- /.single-blog -->--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-12">--}}
-{{--                <div class="single-blog blog-one">--}}
-{{--                    <a href="{{route('about')}}"><div class="featured-img" style="background-image: url('img/blog1.jpg');"></div></a>--}}
-{{--                    <div class="blog-content-box">--}}
-{{--                        <h3><a href="{{route('about')}}">Этапы создания сайта</a></h3>--}}
-{{--                        <a href="{{route('about')}}" class="read-more-btn">+ Подробнее</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div> <!-- /.single-blog -->--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-12">--}}
-{{--                <div class="single-blog blog-one">--}}
-{{--                    <a href="{{route('about')}}"><div class="featured-img" style="background-image: url('img/blog1.jpg');"></div></a>--}}
-{{--                    <div class="blog-content-box">--}}
-{{--                        <h3><a href="{{route('about')}}">Доп услуги</a></h3>--}}
-{{--                        <a href="{{route('about')}}" class="read-more-btn">+ Подробнее</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div> <!-- /.single-blog -->--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
-{{--@endsection--}}
-<!-- blog section -->
 <section id="contact" class="contact-section section-padding theme-bg-gray"
          style="background-image: url('img/back-fot.png');">
     <div class="container">
@@ -741,31 +619,31 @@
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="contact-form-wraper">
-                    <form class="row" id="form" method="POST" enctype="multipart/form-data" class="validateform"
+                    <form class="row validateform" id="form" method="POST" enctype="multipart/form-data"
                           action="{{route("contact_form_process")}}">
                         @csrf
                         <div class="col-md-6 col-12">
                             <div class="single-input">
-                                <input type="name-form" name="name" id="name" placeholder="Matsur...">
+                                <input type="text" name="name"  placeholder="Как к вам обращаться?">
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="single-input">
-                                <input type="email-form" name="email" id="email" placeholder="rustuy2018@gmail.com">
+                                <input type="email" name="email"  placeholder="Ваш email">
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="single-input">
-                                <input type="phone-form" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                                <input type="text" name="phone"  placeholder="+7 (___) ___-__-__">
                             </div>
                         </div>
                         <div class="col-md-12 col-12">
                             <div class="single-input">
-                                <textarea type="text-form" placeholder="text" name="text" id="text"></textarea>
+                                <textarea placeholder="Хочу заказать лендинг и SEO продвижение" name="text" id="text"></textarea>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">
+                            <button name="contact_submit" class="theme_button">
                                 Отправить
                             </button>
                         </div>
@@ -777,10 +655,8 @@
                     <div class="single-info">
                         <h4>Соц. сети</h4>
                         <div class="column">
-                            <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт"
-                               target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
-                            <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i
-                                    class="fab fa-instagram big-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=87786205167&text=Добрый день, хочу заказать сайт" target="_blank"><i class="fab fa-whatsapp big-icon"></i></a>
+                            <a href="https://www.instagram.com/rt._.2000/" target="_blank"><i class="fab fa-instagram big-icon"></i></a>
                             <a href="https://t.me/bexon123" target="_blank"><i class="fab fa-telegram big-icon"></i></a>
                             <a href="mailto:rustuy2018@gmail.com" target="_blank"><i class="fab fa-google big-icon"></i></a>
                         </div>
@@ -845,7 +721,7 @@
     });
 </script>
 
-<script type="text/javascript">
+<script>
     $(document).ready(function () {
 
         $(".modal-link").on("click", function () {
@@ -885,18 +761,17 @@
     }
 </script>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             autoplay: true,
-            autoplayTimeout: 3000,
-            items: 1,
-            margin: 30,
+            autoplayTimeout:3000,
+            items:1,
+            margin:30,
         });
     });
 </script>
 <script>
-    const hello = "Сайт написан на Bootstrap, jQury, Larvael. " +
-        "Если интересует сотрудничество то пишите мне на Whatsapp";
+    const hello = "ПРИВЕТ, РАЗ ТЫ ТУТ ЗНАЧИТ ТЫ ШАРИШЬ -> использованый стек Bootstrap + jQury + Laravel";
     console.log(hello);
 </script>
 </body>
