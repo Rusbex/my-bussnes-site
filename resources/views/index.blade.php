@@ -143,7 +143,7 @@
                     </div>
                     <p class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.6s">Добро пожаловать на
                         сайт!
-                        я заминаюсь веб разработкой и дизайном, готов помочь вам такими <a
+                        Я занимаюсь веб разработкой, SEO оптизизацией и веб дизайном, готов помочь вам такими <a
                             href="#services">услугами</a></p>
                     <a href="javascript: void(0);" class="theme-btn wow fadeInLeft modal-link" data-modal-id="1"
                        data-wow-duration="1.5s" data-wow-delay="1.9s">Связатся сейчас</a>
@@ -174,7 +174,7 @@
             <div class="col-12 text-center col-lg-10 offset-lg-1">
                 <div class="section-title-one wow fadeInDown" data-wow-duration="1.2s">
                     <span>Услуги</span>
-                    <h2>Я веб-разработчик и дизайнер, Ниже услуги, что я оказываю</h2>
+                    <h2>Мой направления</h2>
                 </div>
             </div>
         </div>
@@ -711,69 +711,7 @@
 <script src="{{asset('js/active.js')}}"></script>
 <script src="{{asset('js/jquery.inputmask.js')}}"></script>
 <script src="{{asset('js/parallax.js')}}"></script>
-<script>
-    let typed = new Typed('.profession', {
-        strings: ["Веб разработка", "UI/UX дизайн", "SEO настроика"],
-        typeSpeed: 80,
-        loop: true,
-        startDelay: 200,
-        backSpeed: 50,
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-
-        $(".modal-link").on("click", function () {
-            $('.modal-overlay[data-modal-id="' + $(this).data('modal-id') + '"]').addClass("modal-overlay_visible");
-        });
-
-        $(".modal__close").on("click", function () {
-            $(".modal-overlay").removeClass("modal-overlay_visible");
-        });
-
-        $(document).on("click", function (e) {
-            if (!$(e.target).closest(".modal").length && !$(e.target).closest(".modal-link").length) {
-                $(".modal-overlay").removeClass("modal-overlay_visible");
-            }
-        });
-    });
-</script>
-<script>
-    $(document).ready(function () {
-        $("#phone").inputmask({"mask": "+7 (999) 999-99-99"});
-    });
-</script>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-<script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            autoplay: true,
-            autoplayTimeout:3000,
-            items:1,
-            margin:30,
-        });
-    });
-</script>
-<script>
-    const hello = "ПРИВЕТ, РАЗ ТЫ ТУТ ЗНАЧИТ ТЫ ШАРИШЬ -> использованый стек Bootstrap + jQury + Laravel";
-    console.log(hello);
-</script>
+<script src="{{asset('js/scripts.js')}}"></script>
 </body>
 </html>
 
